@@ -12,6 +12,9 @@
     <div id="app">
         <p>{{title}}</p>
         <p>{{say(title)}}</p>
+        <!-- In href... , attribute of html not use href=="{{}}", solution: v-bind:href= -->
+        <a v-bind:href="url">{{title}}</a>
+        <p>{{chooseYesNo()}}</p>
     </div>
 </body>
     <script src="main.js"></script>
